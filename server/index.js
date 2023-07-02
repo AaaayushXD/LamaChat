@@ -29,9 +29,8 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
-    methods: ['POST', 'GET'],
     credentials: true,
+    origin: process.env.CLIENT_URL,
   })
 );
 
@@ -141,7 +140,6 @@ app.post("/register", async (req, res) => {
 });
 
 // Mongoose setup
-const PORT = process.env.PORT || 3001
 const server = app.listen(3001);
 const wss = new WebSocketServer({ server });
 

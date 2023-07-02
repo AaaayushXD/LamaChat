@@ -11,7 +11,6 @@ function App() {
     <UserContextProvider>
       <Routes />
     </UserContextProvider>
-
   );
 }
 

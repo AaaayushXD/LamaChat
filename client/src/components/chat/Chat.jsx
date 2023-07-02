@@ -139,7 +139,7 @@ export const Chat = () => {
       <div className="bg-[#010001] flex flex-col w-[100px]  md:w-1/3 text-[#dedede] px-2 pt-4 ">
         <div className="flex-grow">
           {/* Logo and Avatar */}
-          <LeftNav username={username} id={ id } />
+          <LeftNav username={username} id={id} />
           {/* Online users */}
 
           {Object.keys(otherContact).map((userId) => {
@@ -173,7 +173,6 @@ export const Chat = () => {
       </div>
       {/* Right Container */}
       <div className="bg-[#010001] w-full overflow-x-hidden md:w-2/3 flex flex-col border-l border-[#272726]">
-        {console.log("Selected user is: ", selectedUser)}
         {selectedUser ? (
           <ChatArea
             value={newMessage}

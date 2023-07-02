@@ -117,7 +117,6 @@ export const ChatArea = (props) => {
 };
 
 export const UserNav = (props) => {
-  console.log(props.userId);
   return (
     <div className=" border-b border-b-[#272726] w-full">
       <div className=" flex justify-between items-center px-4 h-[80px] text-2xl ">
