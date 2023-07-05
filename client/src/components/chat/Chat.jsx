@@ -25,9 +25,7 @@ export const Chat = () => {
   }, [selectedUser]);
 
   function connectToWs() {
-    const ws = new WebSocket(
-      "ws:////lamachat-server.onrender.com/test"
-    );
+    const ws = new WebSocket("wss:////lamachat-server.onrender.com/test");
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => {
