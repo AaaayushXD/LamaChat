@@ -62,6 +62,7 @@ export const Form = () => {
               placeholder="Username"
               onChange={handleUsername}
               value={username}
+              required
             />
             <InputField
               type="password"
@@ -69,6 +70,7 @@ export const Form = () => {
               placeholder="Password"
               value={password}
               onChange={handlePassword}
+              required
             />
             <ButtonElement name={loggedIn ? "Register" : "Login"} />
           </form>

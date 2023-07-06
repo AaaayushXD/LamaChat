@@ -137,7 +137,7 @@ export const Chat = () => {
     <div className="flex h-screen w-full">
       {/* Left Container */}
       <div className="bg-[#010001] flex flex-col w-[100px]  md:w-1/3 text-[#dedede] px-2 pt-4 ">
-        <div className="flex-grow">
+        <div className="flex-grow overflow-x-hidden overflow-y-scroll">
           {/* Logo and Avatar */}
           <LeftNav username={username} id={id} />
           {/* Online users */}
@@ -169,7 +169,7 @@ export const Chat = () => {
           })}
         </div>
         {/* Logout Btn */}
-        <LogoutBtn onClick={handleLogout} />
+        <LogoutBtn onClick={handleLogout} className="fixed bottom-3" />
       </div>
       {/* Right Container */}
       <div className="bg-[#010001] w-full overflow-x-hidden md:w-2/3 flex flex-col border-l border-[#272726]">
